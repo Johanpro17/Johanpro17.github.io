@@ -5,25 +5,25 @@
    ======================================================================= */
 
 const GALLERY = [
-  { src: "assets/imagenes/Institucion.jpeg",   caption: "Nuestra institución educativa" },
+  { src: "assets/imagenes/Institucion.jpeg",   caption: "Nuestra institución educativa promotora" },
   { src: "assets/imagenes/Logo del Colegio que promociona ello.jpeg", caption: "Logotipo del colegio" },
-  { src: "assets/imagenes/Lugar de museo ecologico 1.jpeg", caption: "Museo ecológico de Tayacaja" },
-  { src: "assets/imagenes/Lugar de museo ecoligico 2.jpeg", caption: "Museo ecológico — espacios" },
-  { src: "assets/imagenes/Mapa Pólitico del Lugar turistico Tayacaja.jpeg", caption: "Mapa político de la provincia" },
+  { src: "assets/imagenes/Lugar de museo ecologico 1.jpeg", caption: "Cconocc y su paisaje ancestral" },
+  { src: "assets/imagenes/Lugar de museo ecoligico 2.jpeg", caption: "Vistas del entorno de la Ciudad Perdida" },
+  { src: "assets/imagenes/Mapa Pólitico del Lugar turistico Tayacaja.jpeg", caption: "Mapa de la zona turística — Cconocc, Ahuaycha" },
 ];
 
 const VIDEOS = [
-  { src: "assets/videos/Video 1.mp4", title: "Tayacaja en video" },
-  { src: "assets/videos/Video 2.mp4", title: "El museo ecológico" },
-  { src: "assets/videos/Video 3.mp4", title: "Paisajes de la provincia" },
-  { src: "assets/videos/Video 4.mp4", title: "Cultura y tradición" },
+  { src: "assets/videos/Video 1.mp4", title: "La Ciudad Perdida de Cconocc" },
+  { src: "assets/videos/Video 2.mp4", title: "Muros ancestrales: viento y piedra" },
+  { src: "assets/videos/Video 3.mp4", title: "Montañas majestuosas y atardeceres dorados" },
+  { src: "assets/videos/Video 4.mp4", title: "La campana de oro y la leyenda" },
 ];
 
 const TRAIL = [
-  { alt: "01", name: "Nuestra institución", desc: "Punto de partida del recorrido, donde nació este proyecto de difusión turística.", gain: "Inicio" },
-  { alt: "02", name: "Plaza de Pampas", desc: "La capital de la provincia, punto central de la vida de Tayacaja.", gain: "+1 km" },
-  { alt: "03", name: "Museo ecológico", desc: "Flora, fauna y cultura local reunidas para el visitante.", gain: "+2 km" },
-  { alt: "04", name: "Entorno andino", desc: "Valles y alturas que completan el paisaje de Tayacaja.", gain: "+5 km" },
+  { alt: "01", name: "Punto de partida", desc: "El centro poblado de Cconocc, donde comienza el ascenso hacia la Ciudad Perdida.", gain: "Inicio" },
+  { alt: "02", name: "Muros ancestrales", desc: "Las ruinas de piedra que la tradición atribuye a los incas.", gain: "+1 km" },
+  { alt: "03", name: "Vista panorámica", desc: "Valles y montañas majestuosas que abrazan el sitio desde la altura.", gain: "+2 km" },
+  { alt: "04", name: "La leyenda", desc: "El lugar donde, según se cuenta, resuena la campana de oro a la medianoche.", gain: "+3 km" },
 ];
 
 const CALENDAR = [

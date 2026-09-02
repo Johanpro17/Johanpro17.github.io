@@ -36,7 +36,7 @@ code{font-family:var(--font-mono);background:rgba(20,33,61,.08);padding:.1rem .3
   mix-blend-mode:difference;
   color:#fff;
 }
-.topbar__mark{font-family:var(--font-mono); font-weight:700; letter-spacing:.15em;}
+.topbar__mark{font-family:var(--font-mono); font-weight:700; letter-spacing:.12em; font-size:.72rem; line-height:1.2; max-width:24ch;}
 .topbar__nav{display:flex; gap:2rem; font-size:.9rem;}
 .topbar__nav a{opacity:.85; transition:opacity .2s;}
 .topbar__nav a:hover, .topbar__nav a:focus-visible{opacity:1; text-decoration:underline;}
@@ -78,7 +78,8 @@ code{font-family:var(--font-mono);background:rgba(20,33,61,.08);padding:.1rem .3
   margin:.6rem 0 1.2rem;
 }
 .hero__title span{
-  font-style:italic; font-weight:400; color:var(--gold);
+  display:block; font-style:italic; font-weight:400; color:var(--gold);
+  font-size:.32em; letter-spacing:.04em; text-transform:uppercase;
 }
 .hero__lede{
   font-size:clamp(1rem, 1.6vw, 1.2rem);
@@ -202,6 +203,39 @@ code{font-family:var(--font-mono);background:rgba(20,33,61,.08);padding:.1rem .3
 
 @media (max-width:860px){
   .video-grid{grid-template-columns:1fr;}
+}
+
+/* ---------- LEYENDA ---------- */
+.leyenda{padding:1rem 0 6rem; background:#fff;}
+.leyenda__card{
+  max-width:900px; margin:0 auto; padding:3rem 2.5rem;
+  background:var(--ink); color:#fff; border-radius:8px;
+  position:relative; overflow:hidden;
+}
+.leyenda__card::before{
+  content:"12:00"; position:absolute; right:-1.5rem; top:-1rem;
+  font-family:var(--font-mono); font-size:6rem; font-weight:700;
+  color:rgba(255,255,255,.05); letter-spacing:.05em;
+}
+.leyenda blockquote{
+  font-family:var(--font-display); font-style:italic;
+  font-size:clamp(1.15rem,2.3vw,1.6rem); line-height:1.55;
+  border-left:3px solid var(--gold); padding-left:1.4rem;
+  max-width:46ch;
+}
+.leyenda__card p{
+  margin-top:1.5rem; opacity:.75; font-size:.95rem;
+  max-width:60ch; line-height:1.7;
+}
+.leyenda__close{
+  font-family:var(--font-display); font-style:italic; font-size:1.15rem;
+  color:var(--gold); opacity:1 !important; border-top:1px solid rgba(255,255,255,.12);
+  padding-top:1rem;
+}
+
+@media (max-width:560px){
+  .leyenda__card{padding:2rem 1.4rem;}
+  .leyenda__card::before{font-size:4rem;}
 }
 
 /* ---------- RUTA / TRAIL (signature element) ---------- */
