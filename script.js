@@ -1,7 +1,7 @@
 /* =======================================================================
    CONTENIDO EDITABLE
    Para añadir tus propias fotos: copia el archivo a assets/imagenes/
-   y agrega una línea al arreglo GALLERY. Igual para videos en VIDEOS.
+   y agrega una línea al arreglo GALLERY.
    ======================================================================= */
 
 const GALLERY = [
@@ -10,13 +10,6 @@ const GALLERY = [
   { src: "assets/imagenes/Lugar de museo ecologico 1.jpeg", caption: "Cconocc y su paisaje ancestral" },
   { src: "assets/imagenes/Lugar de museo ecoligico 2.jpeg", caption: "Vistas del entorno de la Ciudad Perdida" },
   { src: "assets/imagenes/Mapa Pólitico del Lugar turistico Tayacaja.jpeg", caption: "Mapa de la zona turística — Cconocc, Ahuaycha" },
-];
-
-const VIDEOS = [
-  { src: "assets/videos/Video 1.mp4", title: "La Ciudad Perdida de Cconocc" },
-  { src: "assets/videos/Video 2.mp4", title: "Muros ancestrales: viento y piedra" },
-  { src: "assets/videos/Video 3.mp4", title: "Montañas majestuosas y atardeceres dorados" },
-  { src: "assets/videos/Video 4.mp4", title: "La campana de oro y la leyenda" },
 ];
 
 const TRAIL = [
@@ -46,24 +39,9 @@ const CALENDAR = [
 function renderGallery(){
   const grid = document.getElementById("galleryGrid");
   grid.innerHTML = GALLERY.map(item => `
-    <figure>
-      <img src="${item.src}" alt="${item.caption}" loading="lazy"
-           onerror="this.closest('figure').style.background='linear-gradient(135deg,#1F5C56,#14213D)'; this.remove();">
-      <figcaption>${item.caption}</figcaption>
+    <figure aria-label="Imagen pendiente">
+      <span class="gallery-grid__blank">Imagen</span>
     </figure>
-  `).join("");
-}
-
-function renderVideos(){
-  const grid = document.getElementById("videoGrid");
-  grid.innerHTML = VIDEOS.map(v => `
-    <div class="video-card">
-      <video controls preload="metadata">
-        <source src="${v.src}" type="video/mp4">
-        Tu navegador no soporta video HTML5.
-      </video>
-      <div class="video-card__title">${v.title}</div>
-    </div>
   `).join("");
 }
 
@@ -92,7 +70,6 @@ function renderCalendar(){
 
 document.addEventListener("DOMContentLoaded", () => {
   renderGallery();
-  renderVideos();
   renderTrail();
   renderCalendar();
 });
